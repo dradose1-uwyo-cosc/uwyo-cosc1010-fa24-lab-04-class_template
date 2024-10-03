@@ -1,12 +1,9 @@
-# Your Name Here
+# Caitlyn Ganskow
 # UWYO COSC 1010
-# Submission Date
+# 10/03/2024
 # Lab 03 
-# Lab Section: 
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Lab Section: 12 
+# Sources, people worked with, help given to: None
 
 
 
@@ -99,7 +96,18 @@ min_temps = [
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
 
+average_max_sum = 0
+average_min_sum = 0
+index = 0
+
+for temp in max_temps:
+    average_max_sum = average_max_sum + temp
+    average_min_sum = average_min_sum + min_temps[index]
+    index += 1
+print(f"{average_max_sum/len(max_temps)} is the average maximum temperature. {average_min_sum/len(min_temps)} is the average minimum temperature.")
+
+
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 
-
+print(f"The highest recorded temperature is: {max(max_temps)}. The lowest recorded temperature is: {min(min_temps)}")
